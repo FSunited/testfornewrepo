@@ -16,6 +16,13 @@ public class MainActivity extends Activity {
 		Toast.makeText(getApplicationContext(), "起動時 Toast!!", Toast.LENGTH_SHORT).show();
 	}
 
+	
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+		Toast.makeText(getApplicationContext(), "リスタート Toast!!", Toast.LENGTH_SHORT).show();
+	}
+
 	@Override
 	protected void onDestroy() {
 		Toast.makeText(getApplicationContext(), "終了時 Toast!!", Toast.LENGTH_SHORT).show();
