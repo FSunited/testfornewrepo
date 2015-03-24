@@ -13,12 +13,12 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		Toast.makeText(getApplicationContext(), "起動時トースト表示", Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(), "起動時 Toast!!", Toast.LENGTH_SHORT).show();
 	}
 
 	@Override
 	protected void onDestroy() {
-		Toast.makeText(getApplicationContext(), "終了時トースト表示", Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(), "終了時 Toast!!", Toast.LENGTH_SHORT).show();
 		super.onDestroy();
 	}
 
