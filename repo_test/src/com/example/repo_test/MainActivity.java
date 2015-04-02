@@ -47,4 +47,8 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	private void showToast(String message){
+		Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+	}
 }
